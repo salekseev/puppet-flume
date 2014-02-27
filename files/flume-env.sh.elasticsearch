@@ -1,0 +1,12 @@
+# Managed by puppet - do not modify.
+# If this file is is FLUME_CONF_DIR/flume-env.sh, it sourced during execution
+# of the flume script and the flume-daemon.sh script.
+
+# Enviroment variables can be set here.
+#JAVA_HOME=/usr/lib/jvm/java-openjdk
+
+# Give Flume more memory and pre-allocate, enable remote monitoring via JMX
+JAVA_OPTS="-Xms100m -Xmx200m -Dcom.sun.management.jmxremote"
+
+# Note that the conf directory is always included in the classpath.
+FLUME_CLASSPATH="/usr/share/elasticsearch/lib/*"
