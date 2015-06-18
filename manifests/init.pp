@@ -102,7 +102,7 @@ class flume(
   if ( $ensure == 'present' ) {
 
     $notify_service = $restart_on_change ? {
-      true  => Service['$flume::params::service_name'],
+      true  => Service[$flume::params::service_name],
       false => undef,
     }
 
